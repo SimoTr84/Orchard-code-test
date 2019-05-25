@@ -1,0 +1,24 @@
+{
+  "name": "orchard-code-test",
+  "version": "1.0.0",
+  "description": "* Invision public URL: https://projects.invisionapp.com/share/5WQPC1IJM9N\r * You should also have been added to the board to have access to the inspect tab.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimoTr84/Orchard-code-test.git"
+  },
+  "author": "Simone Trucco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimoTr84/Orchard-code-test/issues"
+  },
+  "homepage": "https://github.com/SimoTr84/Orchard-code-test#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper": "^1.0.1"
+  }
+}
