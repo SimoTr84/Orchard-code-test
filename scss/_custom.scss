@@ -6,20 +6,32 @@
 body {
   background-color: $lighter-black;
   color: $white;
-  //font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
 .first-container {
-  //height: 619px;
   margin-top: 11.625rem;
-  //@include media-breakpoint-up(xl) {
-  //  height: unset;
-  //  margin-top: 5rem;
-  //}
+  @include media-breakpoint-down(lg) {
+    margin-top: 5rem;
+  }
   .row {
+    .col-img {
+     img {
+       -webkit-transition: all 1.5s;
+       -moz-transition: all 1.5s;
+       -ms-transition: all 1.5s;
+       -o-transition: all 1.5s;
+       transition: all 1.5s;
+       &:hover {
+         transform: scale(0.98);
+         -webkit-box-shadow: 4px 4px 5px 0px rgba($secondary, 0.65);
+         -moz-box-shadow:    4px 4px 5px 0px rgba($secondary, 0.65);
+         box-shadow:         4px 4px 5px 0px rgba($secondary, 0.65);
+       }
+     }
+    }
     .col-text {
-      @include media-breakpoint-down(xl) {
+      @include media-breakpoint-down(lg) {
         margin-top: 2rem;
       }
       h4 {
@@ -52,6 +64,10 @@ body {
 .second-container {
   margin-top: 13.3125rem;
   margin-bottom: 11.6875rem;
+  @include media-breakpoint-down(lg) {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
   h1 {
     margin-bottom: 3.75rem;
   }
@@ -61,6 +77,15 @@ body {
       img {
         border-bottom: 4px solid $primary;
         margin-bottom: 27px;
+        -webkit-transition: all 1.5s;
+        -moz-transition: all 1.5s;
+        -ms-transition: all 1.5s;
+        -o-transition: all 1.5s;
+        transition: all 1.5s;
+        &:hover {
+          transform: scale(1.05);
+
+        }
       }
       .card-body {
         //padding-left: 0;
@@ -101,7 +126,7 @@ body {
           .modal-content {
             .modal-header {
               .close {
-                background-color: #000;
+                background-color: rgba($lighter-black, .8);
                 color: #fff;
                 border: none;
                 font-size: 1.25rem;
