@@ -24,9 +24,6 @@ body {
        transition: all 1.5s;
        &:hover {
          transform: scale(0.98);
-         -webkit-box-shadow: 4px 4px 5px 0px rgba($secondary, 0.65);
-         -moz-box-shadow:    4px 4px 5px 0px rgba($secondary, 0.65);
-         box-shadow:         4px 4px 5px 0px rgba($secondary, 0.65);
        }
      }
     }
@@ -47,6 +44,9 @@ body {
             height: 1px;
             border-bottom: 1px solid $white;
             content: "";
+            @include media-breakpoint-down(sm) {
+              border-bottom: none;
+            }
           }
         }
       }
@@ -84,11 +84,9 @@ body {
         transition: all 1.5s;
         &:hover {
           transform: scale(1.05);
-
         }
       }
       .card-body {
-        //padding-left: 0;
         .card-title {
           font-size: 1.125rem;
         }

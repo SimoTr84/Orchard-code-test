@@ -5536,10 +5536,7 @@ body {
     -o-transition: all 1.5s;
     transition: all 1.5s; }
     .first-container .row .col-img img:hover {
-      transform: scale(0.98);
-      -webkit-box-shadow: 4px 4px 5px 0px rgba(194, 194, 194, 0.65);
-      -moz-box-shadow: 4px 4px 5px 0px rgba(194, 194, 194, 0.65);
-      box-shadow: 4px 4px 5px 0px rgba(194, 194, 194, 0.65); }
+      transform: scale(0.98); }
   @media (max-width: 1199.98px) {
     .first-container .row .col-text {
       margin-top: 2rem; } }
@@ -5556,6 +5553,9 @@ body {
         height: 1px;
         border-bottom: 1px solid #fff;
         content: ""; }
+        @media (max-width: 767.98px) {
+          .first-container .row .col-text h4 span:after {
+            border-bottom: none; } }
   .first-container .row .col-text p {
     font-size: 1.125rem;
     margin-bottom: 3rem; }
