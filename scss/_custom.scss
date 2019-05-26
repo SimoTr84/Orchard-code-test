@@ -1,24 +1,27 @@
 //$theme-colors: (
 //  "primary": #0074d9,
-//  "danger": #ff4136
+//  "primary": #ff4136
 //);
 
 body {
-  background-color: $black;
+  background-color: $lighter-black;
   color: $white;
   //font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
 .first-container {
-  height: 619px;
-  //position: absolute;
-  //top: 50%;
-  //left: 50%;
-  //transform: translate(-50%, -30%);
+  //height: 619px;
   margin-top: 11.625rem;
+  //@include media-breakpoint-up(xl) {
+  //  height: unset;
+  //  margin-top: 5rem;
+  //}
   .row {
-    .col {
+    .col-text {
+      @include media-breakpoint-down(xl) {
+        margin-top: 2rem;
+      }
       h4 {
         margin-bottom: 28px;
         & span {
@@ -48,6 +51,7 @@ body {
 
 .second-container {
   margin-top: 13.3125rem;
+  margin-bottom: 11.6875rem;
   h1 {
     margin-bottom: 3.75rem;
   }
@@ -55,13 +59,42 @@ body {
     .card {
       background-color: transparent !important;
       img {
-        border-bottom: 4px solid $danger;
+        border-bottom: 4px solid $primary;
+        margin-bottom: 27px;
       }
       .card-body {
-        padding-left: 0;
+        //padding-left: 0;
+        .card-title {
+          font-size: 1.125rem;
+        }
+        .card-text {
+          color: $secondary;
+          line-height: $line-height-md;
+        }
         .btn {
           color: #fff;
           text-transform: uppercase;
+          position: relative;
+          padding-bottom: 10px;
+          &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid $primary;
+            content: "";
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+          }
+          &:hover {
+            &:after {
+              border-bottom: 4px solid $primary;
+            }
+          }
         }
         .modal-dialog {
           background-color: transparent;
@@ -73,6 +106,8 @@ body {
                 border: none;
                 font-size: 1.25rem;
               }
+            }
+            .modal-body {
             }
           }
         }

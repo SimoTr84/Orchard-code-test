@@ -5,17 +5,18 @@
 
 // Color system
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$white:         #fff !default;
+$gray-100:      #f8f9fa !default;
+$gray-200:      #e9ecef !default;
+$gray-300:      #dee2e6 !default;
+$gray-400:      #ced4da !default;
+$gray-500:      #adb5bd !default;
+$gray-600:      #6c757d !default;
+$gray-700:      #495057 !default;
+$gray-800:      #343a40 !default;
+$gray-900:      #212529 !default;
+$lighter-black: #0E1414 !default;
+$black:         #000 !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -66,8 +67,8 @@ $colors: map-merge(
                 $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #CF1430 !default;
+$secondary:     #C2C2C2 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -227,6 +228,7 @@ $grid-gutter-width:           30px !default;
 // Define common padding and border radius sizes and more.
 
 $line-height-lg:              2 !default;
+$line-height-md:              1.75 !default;
 $line-height-sm:              1.5 !default;
 $line-height-paragraph:       1.25 !default;
 
@@ -293,7 +295,7 @@ $line-height-base:            1.5 !default;
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.625 !default;
 $h5-font-size:                $font-size-base * 1.30 !default;
 $h6-font-size:                16px !default;
 
@@ -937,7 +939,7 @@ $modal-dialog-margin-y-sm-up:       1.75rem !default;
 $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-color:               null !default;
-$modal-content-bg:                  rgba($black, .8) !default;
+$modal-content-bg:                  rgba($lighter-black, .8) !default;
 $modal-content-border-color:        rgba($white, .5) !default;
 $modal-content-border-width:        $border-width !default;
 $modal-content-border-radius:       $border-radius-lg !default;
