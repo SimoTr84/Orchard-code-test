@@ -5,22 +5,175 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
 	<title>Orchard Code Test</title>
 </head>
 <body>
 
-<div class="container">
-	<div class="row">
-		<div class="col"></div>
-		<div class="col"></div>
-		<div class="col"></div>
+<div class="container first-container">
+
+	<div class="row d-flex">
+		<div class="col-sm-12 col-md-4">
+			<img src="assets/Image-01@2x.jpg" alt="" class="img-fluid">
+		</div>
+		<div class="d-flex align-items-end flex-column bd-highlight col-sm-12 col-md-4">
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="assets/Image-02@2x.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="row mt-auto">
+				<div class="col-sm-12">
+					<img src="assets/Image-03@2x.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<div class="col col-sm-12 col-md-4">
+			<h4 class="text-uppercase font-weight-lighter">
+				<span>
+					Answer your body's needs
+				</span>
+			</h5>
+			<p>
+				The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer believes our body naturally devolops an appetite for the foods and nutrients it needs to be healthy, but that artificial flavourings are getting in the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs.
+			</p>
+			<h6 class="text-uppercase"">Be mindful</h6>
+			<p><strong>Sourcing local or organic food is a good way to start being more mindful about what you're cooking and eating.</strong></p>
+		</div>
 	</div>
 </div>
 
+<div class="container second-container">
+	<h1 class="text-center text-uppercase font-weight-light">All the latest from AEG</h1>
 
-<!-- jQuery, Bootstrap JS -->
-<script src="node_modules/jquery"></script>
+	<!-- Cards -->
+	<div class="card-deck">
+		<!-- 1st Card -->
+		<div class="card text-white">
+			<img src="assets/Image-04@2x.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-title lead font-weight-bolder">Summer Lunch Menu By Mark Best</p>
+				<p class="card-text">AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p>
+				<button type="button" class="btn pl-0 listener" id="" data-toggle="modal" data-target="#AEGmodal">
+					Read More
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="AEGmodal" tabindex="-1" role="dialog" aria-labelledby="AEGmodalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="AEGmodalLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="modal fade" id="read-more" tabindex="-1" role="dialog" aria-labelledby="articleTitle" aria-hidden="true">-->
+					<!--<div class="modal-dialog" role="document">-->
+						<!--<div class="modal-content">-->
+							<!--<div class="modal-header">-->
+								<!--<h5 class="modal-title" id="articleTitle">Summer Lunch Menu By Mark Best</h5>-->
+								<!--<button type="button" class="close listen" data-dismiss="modal" aria-label="Close">-->
+									<!--<span aria-hidden="true">&times;</span>-->
+								<!--</button>-->
+							<!--</div>-->
+							<!--<div class="modal-body">-->
+								<!--<p>AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p>-->
+							<!--</div>-->
+							<!--<div class="modal-footer">-->
+								<!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!-- End of Modal -->
+			</div>
+		</div>
+		<!-- End of 1st Card -->
+
+		<!-- 2nd Card -->
+		<div class="card text-white">
+			<img src="assets/Image-05@2x.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-title lead font-weight-bolder">A Traditional Christmas Eve, Mark Best Style</p>
+				<p class="card-text">One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.</p>
+				<button type="button" class="btn" data-toggle="modal" data-target="#read-more">
+					Read More
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="read-more" tabindex="-1" role="dialog" aria-labelledby="article" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Summer Lunch Menu By Mark Best</h5>
+								<button type="button" class="close listen" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Modal -->
+			</div>
+		</div>
+		<!-- End of 2nd Card -->
+
+		<!-- 3rd Card -->
+		<div class="card text-white">
+			<img src="assets/Image-04@2x.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<p class="card-title lead font-weight-bolder">Summer Lunch Menu By Mark Best</p>
+				<p class="card-text">AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p>
+				<button type="button" class="btn" data-toggle="modal" data-target="#read-more">
+					Read More
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="read-more" tabindex="-1" role="dialog" aria-labelledby="article" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Summer Lunch Menu By Mark Best</h5>
+								<button type="button" class="close listen" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of Modal -->
+			</div>
+		</div>
+		<!-- End of 3rd Card -->
+
+	</div>
+
+</div>
+
+<!-- jQuery, Bootstrap JS, Main JS -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

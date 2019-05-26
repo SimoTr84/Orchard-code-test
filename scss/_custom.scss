@@ -6,5 +6,77 @@
 body {
   background-color: $black;
   color: $white;
+  //font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
+.first-container {
+  height: 619px;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -30%);
+  margin-top: 11.625rem;
+  .row {
+    .col {
+      h4 {
+        margin-bottom: 28px;
+        & span {
+          position: relative;
+          padding-bottom: 10px;
+          &:after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid $white;
+            content: "";
+          }
+        }
+      }
+      p {
+        font-size: 1.125rem;
+        margin-bottom: 3rem;
+      }
+      h6 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.second-container {
+  margin-top: 13.3125rem;
+  h1 {
+    margin-bottom: 3.75rem;
+  }
+  .card-deck {
+    .card {
+      background-color: transparent !important;
+      img {
+        border-bottom: 4px solid $danger;
+      }
+      .card-body {
+        padding-left: 0;
+        .btn {
+          color: #fff;
+          text-transform: uppercase;
+        }
+        .modal-dialog {
+          background-color: transparent;
+          .modal-content {
+            .modal-header {
+              .close {
+                background-color: #000;
+                color: #fff;
+                border: none;
+                font-size: 1.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
